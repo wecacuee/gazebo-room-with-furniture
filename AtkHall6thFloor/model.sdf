@@ -23,7 +23,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://AtkHall6thFloor/model/AtkHall6thFloor.stl</uri>
+            <uri>model://AtkHall6thFloor/meshes/AtkHall6thFloor.stl</uri>
             <scale>0.05 0.05 0.05</scale>
           </mesh>
         </geometry>
@@ -50,7 +50,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://AtkHall6thFloor/model/AtkHall6thFloor.stl</uri>
+            <uri>model://AtkHall6thFloor/meshes/AtkHall6thFloor.stl</uri>
             <scale>0.05 0.05 0.05</scale>
           </mesh>
         </geometry>
