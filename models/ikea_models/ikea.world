@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include> <uri>model://ground_plane</uri> </include>
+<include><uri>model://IKEA_bed_BEDDINGE              </uri><pose>0 -10 0 0 0 0</pose></include>    
+<include><uri>model://IKEA_bed_BRIMNES               </uri><pose>0 -9 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bed_FJELLSE               </uri><pose>0 -8 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bed_HEMNES                </uri><pose>0 -7 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bed_LEIRVIK               </uri><pose>0 -6 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bed_LILLESAND             </uri><pose>0 -5 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bed_MALM                  </uri><pose>0 -4 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bed_MANDAL                </uri><pose>0 -3 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bed_NORDLI                </uri><pose>0 -2 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bed_RYKENE                </uri><pose>0 -1 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bed_TROMSO                </uri><pose>0 00 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bed_VANVIK                </uri><pose>0 01 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bookcase_BESTA            </uri><pose>0 02 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bookcase_BILLY            </uri><pose>0 03 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bookcase_EXPEDIT          </uri><pose>0 04 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bookcase_HEMNES           </uri><pose>0 05 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bookcase_KILBY            </uri><pose>0 06 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bookcase_LACK             </uri><pose>0 07 0 0 0 0</pose></include>
+<include><uri>model://IKEA_bookcase_LAIVA            </uri><pose>0 08 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_BERNHARD            </uri><pose>0 09 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_BORJE               </uri><pose>1 -9 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_EKENAS              </uri><pose>1 -8 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_EKTORP              </uri><pose>1 -7 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_FUSION              </uri><pose>1 -6 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_HENRIKSDAL          </uri><pose>1 -5 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_HERMAN              </uri><pose>1 -4 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_INGOLF              </uri><pose>1 -3 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_IVAR                </uri><pose>1 -2 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_JOKKMOKK            </uri><pose>1 -1 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_JULES               </uri><pose>1 00 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_KAUSTBY             </uri><pose>1 01 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_KLAPPSTA            </uri><pose>1 02 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_MARIUS              </uri><pose>1 03 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_MARKUS              </uri><pose>1 04 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_NILS                </uri><pose>1 05 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_PATRIK              </uri><pose>1 06 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_POANG               </uri><pose>1 07 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_PREBEN              </uri><pose>1 08 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_REIDAR              </uri><pose>1 09 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_SIGURD              </uri><pose>2 -9 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_SKRUVSTA            </uri><pose>2 -8 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_SNILLE              </uri><pose>2 -7 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_SOLSTA_OLARP        </uri><pose>2 -6 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_STEFAN              </uri><pose>2 -5 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_TOBIAS              </uri><pose>2 -4 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_URBAN               </uri><pose>2 -3 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_VILMAR              </uri><pose>2 -2 0 0 0 0</pose></include>
+<include><uri>model://IKEA_chair_VRETA               </uri><pose>2 -1 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_BESTA                </uri><pose>2 00 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_EXPEDIT              </uri><pose>2 01 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_FREDRIK              </uri><pose>2 02 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_GALANT               </uri><pose>2 03 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_HEMNES               </uri><pose>2 04 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_LAIVA                </uri><pose>2 05 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_LEKSVIK              </uri><pose>2 06 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_LIATORP              </uri><pose>2 07 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_MALM                 </uri><pose>2 08 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_MICKE                </uri><pose>2 09 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_VALLVIK              </uri><pose>3 -9 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_VIKA                 </uri><pose>3 -8 0 0 0 0</pose></include>
+<include><uri>model://IKEA_desk_VITTSJO              </uri><pose>3 -7 0 0 0 0</pose></include>
+<include><uri>model://IKEA_sofa_EKTORP               </uri><pose>3 -6 0 0 0 0</pose></include>
+<include><uri>model://IKEA_sofa_KARLSTAD             </uri><pose>3 -5 0 0 0 0</pose></include>
+<include><uri>model://IKEA_sofa_KIVIK                </uri><pose>3 -4 0 0 0 0</pose></include>
+<include><uri>model://IKEA_sofa_KLAPPSTA             </uri><pose>3 -3 0 0 0 0</pose></include>
+<include><uri>model://IKEA_sofa_KLIPPAN              </uri><pose>3 -2 0 0 0 0</pose></include>
+<include><uri>model://IKEA_sofa_LYCKSELE             </uri><pose>3 -1 0 0 0 0</pose></include>
+<include><uri>model://IKEA_sofa_MANSTAD              </uri><pose>3 00 0 0 0 0</pose></include>
+<include><uri>model://IKEA_sofa_SATER                </uri><pose>3 01 0 0 0 0</pose></include>
+<include><uri>model://IKEA_sofa_SKOGABY              </uri><pose>3 02 0 0 0 0</pose></include>
+<include><uri>model://IKEA_sofa_SOLSTA               </uri><pose>3 03 0 0 0 0</pose></include>
+<include><uri>model://IKEA_sofa_TIDAFORS             </uri><pose>3 04 0 0 0 0</pose></include>
+<include><uri>model://IKEA_sofa_VRETA                </uri><pose>3 05 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_BIRKELAND           </uri><pose>3 06 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_BJORKUDDEN          </uri><pose>3 07 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_BJURSTA             </uri><pose>3 08 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_BOKSEL              </uri><pose>3 09 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_DOCKSTA             </uri><pose>4 -9 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_FUSION              </uri><pose>4 -8 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_GRANAS              </uri><pose>4 -7 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_HEMNES              </uri><pose>4 -6 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_INGATORP            </uri><pose>4 -5 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_INGO                </uri><pose>4 -4 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_ISALA               </uri><pose>4 -3 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_JOKKMOKK            </uri><pose>4 -2 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_KLINGSBO            </uri><pose>4 -1 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_KLUBBO              </uri><pose>4 00 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_LACK                </uri><pose>4 01 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_LIATORP             </uri><pose>4 02 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_LINDVED             </uri><pose>4 03 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_MALM                </uri><pose>4 04 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_MUDDUS              </uri><pose>4 05 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_NESNA               </uri><pose>4 06 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_NILS                </uri><pose>4 07 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_NORBO               </uri><pose>4 08 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_NORDEN              </uri><pose>4 09 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_NORDLI              </uri><pose>5 -9 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_NYVOLL              </uri><pose>5 -8 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_ODDA                </uri><pose>5 -7 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_RAST                </uri><pose>5 -6 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_SALMI               </uri><pose>5 -5 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_TOFTERYD            </uri><pose>5 -4 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_TORSBY              </uri><pose>5 -3 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_UTBY                </uri><pose>5 -2 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_VEJMON              </uri><pose>5 -1 0 0 0 0</pose></include>
+<include><uri>model://IKEA_table_VITTSJO             </uri><pose>5 00 0 0 0 0</pose></include>
+<include><uri>model://IKEA_wardrobe_ANEBODA          </uri><pose>5 01 0 0 0 0</pose></include>
+<include><uri>model://IKEA_wardrobe_DOMBAS           </uri><pose>5 02 0 0 0 0</pose></include>
+<include><uri>model://IKEA_wardrobe_HEMNES           </uri><pose>5 03 0 0 0 0</pose></include>
+<include><uri>model://IKEA_wardrobe_ODDA             </uri><pose>5 04 0 0 0 0</pose></include>
+<include><uri>model://IKEA_wardrobe_PAX              </uri><pose>5 05 0 0 0 0</pose></include>
+
+  </world>
+</sdf>

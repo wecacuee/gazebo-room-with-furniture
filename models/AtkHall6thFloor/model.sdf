@@ -1,6 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
   <model name='AtkHall6thFloor'>
+    <static>1</static>
     <link name='link_0'>
       <inertial>
         <mass>1</mass>
@@ -14,7 +15,7 @@
         </inertia>
         <pose frame=''>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose frame=''>0 0 0 0 -0 0</pose>
+      <pose frame=''>-176 -121 0 0 -0 0</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -101,7 +102,6 @@
         </surface>
       </collision>
     </link>
-    <static>1</static>
     <allow_auto_disable>1</allow_auto_disable>
   </model>
 </sdf>

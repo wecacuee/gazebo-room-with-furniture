@@ -1,0 +1,4 @@
+#!/bin/bash
+# Please download set IKEA_MODELS_DATASET_DIR from http://ikea.csail.mit.edu/zip/IKEA_models.zip
+# and extract it to a directory and set IKEA_MODELS_DATASET_DIR environment variable
+export IKEA_MODELS_DATASET_DIR=$HOME/dat/ikea.csail.mit.edu/IKEA_models

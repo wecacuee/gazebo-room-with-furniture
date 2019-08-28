@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<%
+require 'yaml'
+OBJFILENAME = ENV['IKEA_OBJ_FILENAME']
+SCALE = YAML.load(ENV['IKEA_OBJ_SCALE'])
+CENTER = YAML.load(ENV['IKEA_OBJ_CENTER'])
+OBJFILEPARTS = OBJFILENAME.split(File::SEPARATOR)
+IKEA_NAMES = OBJFILEPARTS.select { |e| e.start_with?("IKEA_") }
+%>
+<sdf version='1.0'>
+  <model name='<%= IKEA_NAMES[0] %>'>
+    <static>1</static>
+    <link name='link_0'>
+      <inertial>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.166667</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.166667</iyy>
+          <iyz>0</iyz>
+          <izz>0.166667</izz>
+        </inertia>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+      </inertial>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <visual name='visual'>
+        <pose frame=''>0 0 0 1.58096 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://<%= OBJFILENAME %></uri>
+            <scale><%= SCALE.join(" ") %></scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name='collision'>
+        <pose frame=''>0 0 0 1.58096 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://<%= OBJFILENAME %></uri>
+            <scale><%= SCALE.join(" ") %></scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
