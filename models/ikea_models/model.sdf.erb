@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
 <%
 require 'yaml'
-MASS = 1
 OBJFILENAME = ENV['IKEA_OBJ_FILENAME']
 DIMS = YAML.load(ENV['IKEA_OBJ_DIMS'])
+MASS = 100 * YAML.load(ENV['IKEA_OBJ_VOLUME'])
 SCALE = YAML.load(ENV['IKEA_OBJ_SCALE'])
 OBJFILEPARTS = OBJFILENAME.split(File::SEPARATOR)
 IKEA_NAMES = OBJFILEPARTS.select { |e| e.start_with?("IKEA_") }
