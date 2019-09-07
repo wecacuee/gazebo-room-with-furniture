@@ -6,6 +6,7 @@ from contextlib import contextmanager
 import os.path as osp
 import subprocess
 from collections import namedtuple
+import random
 from jinja2 import Template
 
 
@@ -360,17 +361,37 @@ def pose_grid(N, empty_radius, sep):
 
 
 def create_gazebo_file(template="world_template.sdf.jinja",
-                       dest_file="world_template_generated.sdf"):
+                       dest_file="world_template_generated.sdf",
+                       ikea_models=POSE_CORRESPONDING_MODEL,
+                       poses=ALL_GOOD_POSES,
+                       p=0.6):
     models = []
     #poses = pose_grid(len(ALL_IKEA_MODELS), empty_radius=3, sep=3)
-    for i, (ikea_name, pose) in enumerate(zip(POSE_CORRESPONDING_MODEL, ALL_GOOD_POSES)):
+    for i, (ikea_name, pose) in enumerate(zip(ikea_models, poses)):
         pose[3:5] = 0
-        model = ModelJinja(name=ikea_name,
-                           pose=tuple(pose.tolist()))
-        models.append(model)
+        if np.random.rand() > p:
+            model = ModelJinja(name=ikea_name,
+                            pose=tuple(pose.tolist()))
+            models.append(model)
 
     render_jinja_template(relpath(template), relpath(dest_file), dict(models=models))
     return relpath(dest_file)
 
+
+def create_random_worlds(dest_file_fmt="world%02d.sdf"):
+    for i in range(100):
+        create_gazebo_file(dest_file=dest_file_fmt % i)
+
+
+def create_shuffled_worlds(dest_file_fmt="world_shuffled_%02d.sdf"):
+    for i in range(100):
+        models_copy = POSE_CORRESPONDING_MODEL.copy()
+        random.shuffle(models_copy)
+        create_gazebo_file(dest_file=dest_file_fmt % i,
+                           ikea_models=models_copy,
+                           poses=ALL_GOOD_POSES)
+
+
 if __name__ == '__main__':
-    create_gazebo_file()
+    #create_random_worlds()
+    create_shuffled_worlds()
