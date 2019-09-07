@@ -8,7 +8,8 @@ import subprocess
 from collections import namedtuple
 import random
 from jinja2 import Template
-
+import os
+import os.path
 
 import numpy as np
 
@@ -348,6 +349,9 @@ available_locations = [
 
 def render_jinja_template(jinja_file, dst_file, var_dict):
     template = Template(open(jinja_file).read())
+    dst_dir = os.path.dirname(dst_file)
+    if not os.path.exists(dst_dir):
+        os.makedirs(dst_dir)
     template.stream(**var_dict).dump(dst_file)
 
 
@@ -378,12 +382,12 @@ def create_gazebo_file(template="world_template.sdf.jinja",
     return relpath(dest_file)
 
 
-def create_random_worlds(dest_file_fmt="world%02d.sdf"):
+def create_random_worlds(dest_file_fmt="worlds/world%d.sdf"):
     for i in range(100):
         create_gazebo_file(dest_file=dest_file_fmt % i)
 
 
-def create_shuffled_worlds(dest_file_fmt="world_shuffled_%02d.sdf"):
+def create_shuffled_worlds(dest_file_fmt="worlds/world_shuffled_%d.sdf"):
     for i in range(100):
         models_copy = POSE_CORRESPONDING_MODEL.copy()
         random.shuffle(models_copy)
