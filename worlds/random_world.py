@@ -396,6 +396,8 @@ def create_shuffled_worlds(dest_file_fmt="worlds/world_shuffled_%d.sdf"):
                            poses=ALL_GOOD_POSES)
 
 
+
+
 if __name__ == '__main__':
-    #create_random_worlds()
-    create_shuffled_worlds()
+    create_random_worlds()
+    #create_shuffled_worlds()
