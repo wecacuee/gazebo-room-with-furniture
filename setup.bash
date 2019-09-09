@@ -5,7 +5,7 @@ function setup_env() {
 
     {
         [ -f /usr/share/gazebo-9/setup.sh ] && source /usr/share/gazebo-9/setup.sh
-        source $setupdir/gazebo_models/setup.bash
+        [ -f $setupdir/gazebo_models/setup.bash ] && source $setupdir/gazebo_models/setup.bash
         unset GAZEBO_MODEL_URI
     }
 

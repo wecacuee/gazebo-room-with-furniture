@@ -66,14 +66,17 @@ def download_ikea_meshes(
         tofile,
         url="http://ikea.csail.mit.edu/zip/IKEA_models.zip"):
     r = requests.get(url)
+    print("Downloading IKEA ", end="")
     with open(tofile, "wb") as fd:
-        for chunk in r.iter_content(chunk_size=128):
+        for chunk in r.iter_content(chunk_size=4098):
+            print(".", end="")
             fd.write(chunk)
+    print("Done")
 
 
 def download_and_unzip_ikea_meshes(dst_dir):
     zip_file = dst_dir + ".zip"
-    osp.makedirs(osp.dirname(zip_file))
+    Path(zip_file).parent.mkdir(parents=True, exist_ok=True)
     download_ikea_meshes(zip_file)
     unzipped_dir = dst_dir + "_unzipped"
     unzip_file(zip_file, unzipped_dir)
