@@ -12,6 +12,7 @@ import os
 import os.path
 
 import numpy as np
+from keyword2cmdline import command
 
 
 def relpath(fname,
@@ -364,8 +365,8 @@ def pose_grid(N, empty_radius, sep):
     return full_grid.T.reshape(-1, 2)
 
 
-def create_gazebo_file(template="world_template.sdf.jinja",
-                       dest_file="world_template_generated.sdf",
+def create_gazebo_file(template=relpath("world_template.sdf.jinja"),
+                       dest_file=relpath("world_template_generated.sdf"),
                        ikea_models=POSE_CORRESPONDING_MODEL,
                        poses=ALL_GOOD_POSES,
                        p=0.6):
@@ -378,16 +379,17 @@ def create_gazebo_file(template="world_template.sdf.jinja",
                             pose=tuple(pose.tolist()))
             models.append(model)
 
-    render_jinja_template(relpath(template), relpath(dest_file), dict(models=models))
-    return relpath(dest_file)
+    render_jinja_template(template, dest_file, dict(models=models))
+    return dest_file
 
 
-def create_random_worlds(dest_file_fmt="worlds/world%d.sdf"):
+@command
+def create_random_worlds(dest_file_fmt=relpath("worlds/world%d.sdf")):
     for i in range(100):
         create_gazebo_file(dest_file=dest_file_fmt % i)
 
-
-def create_shuffled_worlds(dest_file_fmt="worlds/world_shuffled_%d.sdf"):
+@command
+def create_shuffled_worlds(dest_file_fmt=relpath("worlds/world_shuffled_%d.sdf")):
     for i in range(100):
         models_copy = POSE_CORRESPONDING_MODEL.copy()
         random.shuffle(models_copy)
